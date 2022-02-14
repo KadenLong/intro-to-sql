@@ -1,8 +1,8 @@
 --1.
-UPDATE customer SET fax = null WHERE fax != NULL;
+UPDATE customer SET fax = null WHERE fax IS NOT NULL;
 
 --2.
-UPDATE customer SET company = 'Self' WHERE company = NULL;
+UPDATE customer SET company = 'Self' WHERE company IS NULL;
 
 --3.
 UPDATE customer SET last_name = 'Thompson' WHERE first_name = 'Julia' AND last_name = 'Barnett';
